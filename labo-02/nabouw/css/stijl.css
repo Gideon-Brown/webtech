@@ -1,0 +1,85 @@
+:root{
+    --color-paper: #fbf7f0;
+    --color-ink: #2b2b2b;
+    --color-accent: #b5451b;
+    --color-zebra: #f1e9dc;
+    --color-muted: #6b6b6b;
+    --font-body: Verdana;
+    --font-heading: Georgia, sans-serif;
+    --font-size:16px;
+
+}
+
+body{
+    background-color: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-body);
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+h1, h2, h3{
+    font-family: var(--font-heading);
+    font-weight: normal;
+}
+
+h1 {
+    color: var(--color-accent);
+}
+
+
+.slogan{
+    font-style: italic;
+    color: var(--color-muted);
+}
+
+nav a{
+    color: var(--color-accent);  
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.intro + p{
+    font-size: 0.85rem;
+}
+
+
+h3{
+  color:var(--color-muted);
+
+}
+
+h3 + ul{
+    font-size: 0.85rem;
+}
+ 
+.prijs{
+    font-style: italic;
+    color: var(--color-muted);
+}
+
+h3 + ul li:nth-child(odd){
+    background-color: var(--color-zebra);
+}
+
+h2+p a{
+    color: var(--color-accent);
+}
+
+p strong{
+    color: var(--color-accent);
+}
+
+footer{
+    text-align: center;
+    color: var(--color-muted);
+    font-size: 0.80rem;
+    
+}
+
+footer a{
+    color: var(--color-muted);
+    font-size: 0.80 rem;
+}
+
