@@ -6,3 +6,49 @@
 }
 
 /* === your rules === */
+body{
+    padding: 1rem 2rem;
+    
+}
+header{
+    display: flex;
+    background-color: #1f3a2e;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    height: 9vh;
+    
+}
+
+ul{
+    display: flex;
+    gap: 1.5rem;
+    justify-content: space-around;
+
+
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.logo{
+    color:#e6b53c;
+    font-size: 1.5rem;
+}
+.actief{
+    background-color: #e6b53c ;
+    color: #1f3a2e;
+    padding: ;
+    border-radius: 0.5rem;
+}
+
+
+li{
+    list-style: none;
+}
+
+nav a{
+    padding: 0.5rem ;
+    border-radius: 0.5rem;
+}
