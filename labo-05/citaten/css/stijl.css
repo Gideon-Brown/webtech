@@ -6,3 +6,62 @@
 }
 
 /* === your rules === */
+
+.citaten{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem ;
+    padding: 1.5rem;
+    line-height: 1.5rem;
+}
+
+.citaat{
+    flex: 1 1 18rem;
+    padding-left: 0.85rem;
+}
+
+.citaat p{
+    font-weight:bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.blauw{
+    border-left: 0.5rem solid blue;
+    color: blue;
+}
+
+.roze{
+    border-left:0.5rem solid pink;
+    color: pink;
+}
+
+.rood{
+    border-left:0.5rem solid red;
+    color: red;
+}
+
+.oranje{
+    border-left:0.5rem solid orange;
+    color: orange;
+}
+
+.groen{
+    border-left:0.5rem solid green;
+    color: green;
+}
+
+.salie{
+    border-left:0.5rem solid #8fb89a;
+    color: #8fb89a;
+}
+
+.paars{
+    border-left:0.5rem solid purple;
+    color: purple;
+}
+
+.grijs{
+    border-left:0.5rem solid grey;
+    color: grey;
+}
+
