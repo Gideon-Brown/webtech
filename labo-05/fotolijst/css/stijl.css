@@ -6,3 +6,59 @@
 }
 
 /* === your rules === */
+body{
+    background-color: #111111;
+    color: #f3efe6;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+
+.lijst{
+    width: 45rem;
+    margin: 4rem auto;
+    position: relative;
+
+}
+
+img{
+   aspect-ratio: 1;
+   object-fit: cover; 
+}
+
+.vlakje{
+    width: 6rem;
+    height: 6rem;
+    position: absolute;
+}
+
+.roze{
+    background-color: pink; 
+    top: 5rem;
+    left: 5rem;
+    z-index: 10;
+}
+
+.groen{
+    background-color: green;
+    top: 2rem;
+    left: 2rem;
+}
+
+.rood{
+    background-color: red;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 2;
+}
+
+.lime{
+    background-color: lightgreen;
+    bottom: 5rem;
+    right: 5rem;
+}
+
+figcaption{
+    text-align: center;
+    
+}
