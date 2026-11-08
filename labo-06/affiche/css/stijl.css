@@ -7,4 +7,109 @@
 
 /* === base: narrow screens first === */
 
+body{
+    background-color: #1d1d1b;
+    margin: 2rem 1rem
+}
+
+.affiche{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #2554ab;
+    color: #fff8ee;
+    width: min(28rem, 100% - 2rem);
+    margin: 0 auto;
+    padding: clamp(1.5rem, 6vw, 3rem);
+    aspect-ratio: 3/4;
+    position: relative;
+}
+
+h1{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: clamp(2rem, 8vw, 3.5rem);
+    line-height: 1.05;
+}
+.ondertitel{
+    font-size: 0.875rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+.sticker{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: bolder;
+    width: clamp(4rem, 14vw, 7rem);
+    height: clamp(4rem, 14vw, 7rem);
+    position: absolute;
+}
+.prijs{
+    background-color: #ffc83d;
+    color: black;
+    font-size: 1.25rem;
+    border-radius: 50%;
+    top: 2.65rem;
+    left: 2.65rem;
+    z-index: 100;
+
+}
+.datum{
+    background-color: white;
+    color: black;
+    top: 1rem;
+    left: 1rem;
+}
+.uitverkocht{
+    background-color: #d6341c;
+    border-radius: 50%;
+    top: 6rem;
+    left: 6rem;
+    z-index: 100;
+}
+.logo{
+    background-color: #1d1d1b;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.25rem;
+    top: 4rem;
+    left: 4rem;
+}
+
+
+
 /* === media queries: below the base rules === */
+@media(min-width:800px){
+    .logo{
+        top: auto;
+        left: auto;
+        bottom: 6rem;
+        right: 6rem;
+    }
+
+    .uitverkocht{
+        top: auto;
+        left: auto;
+        bottom: 3rem;
+        right: 3rem;
+    }
+}
+
+
+@media(min-width:1000px){
+    .prijs{
+        top: 2rem;
+        right: 2rem;
+        left: auto;
+    }
+
+    .logo{
+        left: 2rem;
+        bottom: 2rem;
+    }
+    .uitverkocht{
+        bottom: 2rem;
+        right: 2rem;
+    }
+}
