@@ -1,0 +1,139 @@
+/* stijl.css - labo 7, kaaien (reset.css is linked before this file) */
+
+/* === fonts === */
+@font-face {
+    font-family: "Fraunces";
+    src: url("../fonts/fraunces-latin-wght-normal.woff2") format("woff2");
+}
+/* === tokens === */
+:root {
+--color-surface: hsl(200 30% 97%);
+--color-ink: hsl(205 40% 12%);
+--color-muted: hsl(205 12% 40%);
+--color-accent: hsl(200 70% 32%);
+--color-line: hsl(200 20% 82%);
+--color-overlay: rgb(0 0 0 / 0.55);
+--font-heading: "Fraunces", Georgia, serif;
+--font-body: Verdana, sans-serif;
+--text-s: 0.8rem;
+--text-m: 1rem;
+--text-l: 1.25rem;
+--text-xl: 1.563rem;
+--space-xs: 0.25rem;
+--space-s: 0.5rem;
+--space-m: 1rem;
+--space-l: 2rem;
+--space-xl: 4rem;   
+}
+/* === base === */
+body{
+display: grid;
+min-height: 100vh;
+}
+.held{
+    background-image: url(../afbeeldingen/kaaien.jpg);
+    background-size: cover; 
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+    padding: clamp(1rem, 5vw, 4rem);
+}
+.paneel{
+    max-width: 36rem;
+    padding: var(--space-l);
+    color: var(--color-surface);
+    background-color: var(--color-overlay);
+}
+.bovenkop{
+    font-size: var(--text-s);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.12em;
+    padding-bottom: var(--space-s);
+}
+h1{
+    font-size: clamp(2rem, 4vw + 1rem, 3.5rem);
+    font-weight: bold;
+    line-height: 1.1;
+    padding-bottom: var(--space-m);
+}
+.lead{
+    padding-bottom: var(--space-l);
+}
+.knop{
+    background-color: var(--color-accent);
+    color: var(--color-surface);
+    font-weight: bold;
+    padding: var(--space-s) var(--space-l);
+    text-decoration: none;
+
+}
+.knop:hover, .knop:focus{
+    background-color: var(--color-surface);
+    color: var(--color-accent);
+}
+main{
+    max-width: 64rem;
+    padding: var(--space-xl) var(--space-m);
+    margin: 0 auto;
+    display: grid;
+    gap: var(--space-l);
+}
+main h2{
+    font-size: var(--space-l);
+    color: var(--color-accent);
+    padding-bottom: var(--space-s);
+}
+.tekst{
+    min-width: 18rem;
+}
+.tekst p{
+    max-width: 65ch;
+    padding-bottom: var(--space-m);
+}
+.praktisch{
+    min-width: 18rem;
+    min-height: 18rem;
+    border: 1px solid var(--color-muted);
+    padding: var(--space-m);
+    padding-bottom: var(--space-xl);
+    background-image: url(../afbeeldingen/kompas.png);
+    background-size: 8rem;
+    background-repeat: no-repeat;
+    background-position: right 1rem bottom 1rem;
+}
+.praktisch ul{
+    margin: 0;
+    padding: var(--space-m);
+    display: grid;
+    gap: var(--space-s);
+}
+footer{
+    background-image: url(../afbeeldingen/golfjes.png);
+    background-repeat: repeat;
+    background-size: auto;
+    background-position: center;
+    border-top: 1px solid var(--color-muted);
+    padding: var(--space-xl) 0;
+}
+footer p{
+    padding: var(--space-s) var(--space-m);
+    color: var(--color-muted);
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    width: auto;
+    width: 30rem;
+    margin: 0 auto;
+}
+@media(min-width:1200px){
+    main{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+
+/* === the hero: photo as background, text on a dark panel (7.10, F7.10) === */
+
+
+/* === main, aside with a corner decoration, footer with a repeating tile === */
