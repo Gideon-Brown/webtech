@@ -2,9 +2,76 @@
 
 /* === tokens: five colour roles in hsl (7.7) === */
 :root {
+    --color-scheme: light dark;
+    --kleur-oppervlak:light-dark(hsl(45 60% 96%), hsl(25 15% 10%));
+    --kleur-inkt: light-dark(hsl(25 30% 12%),hsl(40 30% 92%));
+    --kleur-gedempt: light-dark(hsl(25 10% 40%), hsl(30 10% 70%));
+    --kleur-accent: light-dark(hsl(22 85% 40%), hsl(32 90% 62%));
+    --kleur-lijn: light-dark(hsl(40 25% 80%), hsl(25 10% 28%));
 
+    --font-koppen: Georgia, serif;
+    --font-tekst: Verdana, sans-serif;
+
+     --regelhoogte: 1.5;
+
+       /* Tekstgroottes */
+    --text-s: 0.8rem;
+    --text-m: 1rem;
+    --text-l: 1.25rem;
+    --text-xl: 1.563rem;
+    --text-xxl: 1.953rem;
+    --text-xxxl: 2.441rem;
+
+    /* Witruimte */
+    --space-xs: 0.25rem;
+    --space-s: 0.5rem;
+    --space-m: 1rem;
+    --space-l: 2rem;
+    --space-xl: 4rem;
 }
 
+
 /* === base === */
+body{
+   background-color: var(--kleur-oppervlak);
+   font-family: var(--font-tekst);
+   line-height: var(--regelhoogte);
+}
+h1, h2{
+    font-family: var(--font-koppen);
+}
+header{
+    padding-bottom: var(--space-l);
+    padding-top: var(--space-xl);
+    text-align: center;
+}
+.naam{
+    font-size: var(--text-xxl);
+    color: var(--kleur-accent);
+    line-height: 1.1;
+    font-family: var(--font-koppen);
+}
+.slogan{
+    color: var(--kleur-gedempt);
+    padding-top: var(--space-xs);
+}
+main{
+    margin: 0 auto;
+    padding-left: var(--space-m);
+    padding-right: var(--space-m);
+    padding-bottom: var(--space-l);
+    max-width: 56rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    min-width: 16rem;
+}
+.info{
+    width: 56rem;
+    grid-column: 1/4;
+}
 
 /* === dark mode: tokens only (7.9) === */
